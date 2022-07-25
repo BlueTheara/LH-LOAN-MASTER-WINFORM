@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C442410B-F169-4106-8B7E-C8732BFBEDF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Micro_Finance</RootNamespace>
+    <AssemblyName>Micro_Finance</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>calculator.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassMD5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ClassMD5.dll</HintPath>
+    </Reference>
+    <Reference Include="forListBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\forListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\ClsGlouble.cs" />
+    <Compile Include="Class\ConnectionEnity.cs" />
+    <Compile Include="Class\MyDatagridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\MyDatagridView.Designer.cs">
+      <DependentUpon>MyDatagridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contactus.Designer.cs">
+      <DependentUpon>contactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCapitalAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCapitalAll.designer.cs">
+      <DependentUpon>frmCapitalAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCOIncomeAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCOIncomeAll.designer.cs">
+      <DependentUpon>frmCOIncomeAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmDialog.Designer.cs">
+      <DependentUpon>frmDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCO.designer.cs">
+      <DependentUpon>frmCO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmBorrowDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmBorrowDelete.designer.cs">
+      <DependentUpon>frmBorrowDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmNewCusAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmNewCusAll.designer.cs">
+      <DependentUpon>frmNewCusAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmNewCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmNewCus.designer.cs">
+      <DependentUpon>frmNewCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATASET\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATASET\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmAlert.Designer.cs">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmBG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmBG.Designer.cs">
+      <DependentUpon>frmBG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmBorrow.designer.cs">
+      <DependentUpon>frmBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmBorrowSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmBorrowSub.designer.cs">
+      <DependentUpon>frmBorrowSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCapital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCapital.designer.cs">
+      <DependentUpon>frmCapital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCOIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCOIncome.designer.cs">
+      <DependentUpon>frmCOIncome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCOSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCOSub.designer.cs">
+      <DependentUpon>frmCOSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCus.designer.cs">
+      <DependentUpon>frmCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCusSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCusSub.designer.cs">
+      <DependentUpon>frmCusSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmEverydayPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmEverydayPay.designer.cs">
+      <DependentUpon>frmEverydayPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPay.designer.cs">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPayAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPayAll.designer.cs">
+      <DependentUpon>frmPayAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="contactus.resx">
+      <DependentUpon>contactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCapitalAll.resx">
+      <DependentUpon>frmCapitalAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCOIncomeAll.resx">
+      <DependentUpon>frmCOIncomeAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmDialog.resx">
+      <DependentUpon>frmDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCO.resx">
+      <DependentUpon>frmCO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBorrowDelete.resx">
+      <DependentUpon>frmBorrowDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmNewCusAll.resx">
+      <DependentUpon>frmNewCusAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmNewCus.resx">
+      <DependentUpon>frmNewCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmAlert.resx">
+      <DependentUpon>frmAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBG.resx">
+      <DependentUpon>frmBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBorrow.resx">
+      <DependentUpon>frmBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmBorrowSub.resx">
+      <DependentUpon>frmBorrowSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCapital.resx">
+      <DependentUpon>frmCapital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCOIncome.resx">
+      <DependentUpon>frmCOIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCOSub.resx">
+      <DependentUpon>frmCOSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCus.resx">
+      <DependentUpon>frmCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCusSub.resx">
+      <DependentUpon>frmCusSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmEverydayPay.resx">
+      <DependentUpon>frmEverydayPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPay.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPayAll.resx">
+      <DependentUpon>frmPayAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTFILE\CUSTOMER_MAS_ALL.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\INCOME_SUMMARY_ALL.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\CAPITAL_SUMMARY_ALL.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\COINCOMEONECO_RP.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\CAPITAL_SUMMARY.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\CUSTOMER_DET.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\CUSTOMER_MAS.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\COINCOME_RP.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\CUSPAYMENTRECORD_RP.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\EVERYDAYPAYONECO_RP.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\EVERYDAYPAY_RP.rdlc" />
+    <EmbeddedResource Include="REPORTFILE\PAYSCHEDULE_RP.rdlc" />
+    <None Include="DATASET\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DATASET\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DATASET\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Micro_Finance.DATASET.DataSet1+CO_NEW_DETDataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicago-white-sox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click_here_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee-Management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_fav_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hardware-Printer-Blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-next-blue-light-braun-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NCAA final four bracket - excel download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pay_Online.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-group-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx_logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c7a98ade-698e-4a23-8a57-50a813e7ad53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cedar_Finance_logo_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10452483_716872608358334_1977592929_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calculator.ico" />
+    <None Include="Resources\search-icon.png" />
+    <None Include="Resources\Blue History.png" />
+    <None Include="Resources\undo-4-256.png" />
+    <None Include="Resources\paying-for-ppc-management-services-280x362.jpg" />
+    <None Include="Resources\pay-298x300.png" />
+    <None Include="Resources\donor-pay.png" />
+    <None Include="Resources\background8.jpg" />
+    <None Include="Resources\welcome-960x447.jpg" />
+    <None Include="Resources\sj-7-circle.png" />
+    <None Include="Resources\924965-bigthumbnail.jpg" />
+    <None Include="Resources\dasd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

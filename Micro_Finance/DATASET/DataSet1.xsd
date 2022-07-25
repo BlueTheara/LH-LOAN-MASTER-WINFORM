@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="dt" GeneratorFunctionsComponentClassName="dt" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="dt" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbMicro_FinanceConnectionString5" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbMicro_FinanceConnectionString5 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Micro_Finance.Properties.Settings.GlobalReference.Default.dbMicro_FinanceConnectionString5" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbMicro_FinanceConnectionString6" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbMicro_FinanceConnectionString6 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Micro_Finance.Properties.Settings.GlobalReference.Default.dbMicro_FinanceConnectionString6" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbMicro_FinanceConnectionString7" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbMicro_FinanceConnectionString7 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Micro_Finance.Properties.Settings.GlobalReference.Default.dbMicro_FinanceConnectionString7" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CoIncomeViewTableAdapter" GeneratorDataComponentClassName="CoIncomeViewTableAdapter" Name="CoIncomeView" UserDataComponentName="CoIncomeViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbMicro_FinanceConnectionString5 (Settings)" DbObjectName="dbMicro_Finance.dbo.CoIncomeView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BID, CID, CName, Type, Expr1, COID, Pay_Date, Pay__Amount FROM dbo.CoIncomeView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BID" DataSetColumn="BID" />
+              <Mapping SourceColumn="CID" DataSetColumn="CID" />
+              <Mapping SourceColumn="CName" DataSetColumn="CName" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="COID" DataSetColumn="COID" />
+              <Mapping SourceColumn="Pay_Date" DataSetColumn="Pay_Date" />
+              <Mapping SourceColumn="Pay__Amount" DataSetColumn="Pay__Amount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CONewCus_VSTableAdapter" GeneratorDataComponentClassName="CONewCus_VSTableAdapter" Name="CONewCus_VS" UserDataComponentName="CONewCus_VSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbMicro_FinanceConnectionString5 (Settings)" DbObjectName="dbMicro_Finance.dbo.CONewCus_VS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT COID, COName, Expr1, Expr2, StartDate FROM dbo.CONewCus_VS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="COID" DataSetColumn="COID" />
+              <Mapping SourceColumn="COName" DataSetColumn="COName" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="StartDate" DataSetColumn="StartDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PayScheduleViewTableAdapter" GeneratorDataComponentClassName="PayScheduleViewTableAdapter" Name="PayScheduleView" UserDataComponentName="PayScheduleViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbMicro_FinanceConnectionString5 (Settings)" DbObjectName="dbMicro_Finance.dbo.PayScheduleView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BID, CusID, Total_pay, Schedule, day, CName, Number, Address, COName, Expr1, B_Amount, Type, Period, B_Date, EndDate, Expr2, PaidDay, R_Day FROM dbo.PayScheduleView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BID" DataSetColumn="BID" />
+              <Mapping SourceColumn="CusID" DataSetColumn="CusID" />
+              <Mapping SourceColumn="Total_pay" DataSetColumn="Total_pay" />
+              <Mapping SourceColumn="Schedule" DataSetColumn="Schedule" />
+              <Mapping SourceColumn="day" DataSetColumn="day" />
+              <Mapping SourceColumn="CName" DataSetColumn="CName" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="COName" DataSetColumn="COName" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="B_Amount" DataSetColumn="B_Amount" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="B_Date" DataSetColumn="B_Date" />
+              <Mapping SourceColumn="EndDate" DataSetColumn="EndDate" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="PaidDay" DataSetColumn="PaidDay" />
+              <Mapping SourceColumn="R_Day" DataSetColumn="R_Day" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CusPaymentRecord_VSTableAdapter" GeneratorDataComponentClassName="CusPaymentRecord_VSTableAdapter" Name="CusPaymentRecord_VS" UserDataComponentName="CusPaymentRecord_VSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbMicro_FinanceConnectionString5 (Settings)" DbObjectName="dbMicro_Finance.dbo.CusPaymentRecord_VS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BID, CusID, CName, Total_Pay, Pay__Amount, Pay_Date, less, extra FROM dbo.CusPaymentRecord_VS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BID" DataSetColumn="BID" />
+              <Mapping SourceColumn="CusID" DataSetColumn="CusID" />
+              <Mapping SourceColumn="CName" DataSetColumn="CName" />
+              <Mapping SourceColumn="Total_Pay" DataSetColumn="Total_Pay" />
+              <Mapping SourceColumn="Pay__Amount" DataSetColumn="Pay__Amount" />
+              <Mapping SourceColumn="Pay_Date" DataSetColumn="Pay_Date" />
+              <Mapping SourceColumn="less" DataSetColumn="less" />
+              <Mapping SourceColumn="extra" DataSetColumn="extra" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NewCus_VSTableAdapter" GeneratorDataComponentClassName="NewCus_VSTableAdapter" Name="NewCus_VS" UserDataComponentName="NewCus_VSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbMicro_FinanceConnectionString5 (Settings)" DbObjectName="dbMicro_Finance.dbo.NewCus_VS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BID, CusID, CName, Address, B_Amount, Period, Type, PaidDay, R_Day, B_Date, Total_Pay, COName FROM dbo.NewCus_VS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BID" DataSetColumn="BID" />
+              <Mapping SourceColumn="CusID" DataSetColumn="CusID" />
+              <Mapping SourceColumn="CName" DataSetColumn="CName" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="B_Amount" DataSetColumn="B_Amount" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="PaidDay" DataSetColumn="PaidDay" />
+              <Mapping SourceColumn="R_Day" DataSetColumn="R_Day" />
+              <Mapping SourceColumn="B_Date" DataSetColumn="B_Date" />
+              <Mapping SourceColumn="Total_Pay" DataSetColumn="Total_Pay" />
+              <Mapping SourceColumn="COName" DataSetColumn="COName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_1TableAdapter" GeneratorDataComponentClassName="View_1TableAdapter" Name="View_1" UserDataComponentName="View_1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbMicro_FinanceConnectionString6 (Settings)" DbObjectName="dbMicro_Finance.dbo.View_1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from view_1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="number" DataSetColumn="number" />
+              <Mapping SourceColumn="CName" DataSetColumn="CName" />
+              <Mapping SourceColumn="Sex" DataSetColumn="Sex" />
+              <Mapping SourceColumn="B_Amount" DataSetColumn="B_Amount" />
+              <Mapping SourceColumn="Interest" DataSetColumn="Interest" />
+              <Mapping SourceColumn="I_Amount" DataSetColumn="I_Amount" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Period" DataSetColumn="Period" />
+              <Mapping SourceColumn="StartDate" DataSetColumn="StartDate" />
+              <Mapping SourceColumn="EndDate" DataSetColumn="EndDate" />
+              <Mapping SourceColumn="R_Amount" DataSetColumn="R_Amount" />
+              <Mapping SourceColumn="Female" DataSetColumn="Female" />
+              <Mapping SourceColumn="Male" DataSetColumn="Male" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EveryDayView21TableAdapter" GeneratorDataComponentClassName="EveryDayView21TableAdapter" Name="EveryDayView21" UserDataComponentName="EveryDayView21TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbMicro_FinanceConnectionString7 (Settings)" DbObjectName="dbMicro_Finance.dbo.EveryDayView2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from EveryDayView2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BID" DataSetColumn="BID" />
+              <Mapping SourceColumn="CusID" DataSetColumn="CusID" />
+              <Mapping SourceColumn="CName" DataSetColumn="CName" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="B_Amount" DataSetColumn="B_Amount" />
+              <Mapping SourceColumn="B_Date" DataSetColumn="B_Date" />
+              <Mapping SourceColumn="COName" DataSetColumn="COName" />
+              <Mapping SourceColumn="Schedule" DataSetColumn="Schedule" />
+              <Mapping SourceColumn="Total_Pay" DataSetColumn="Total_Pay" />
+              <Mapping SourceColumn="New_Type" DataSetColumn="New_Type" />
+              <Mapping SourceColumn="PaidDay" DataSetColumn="PaidDay" />
+              <Mapping SourceColumn="R_Day" DataSetColumn="R_Day" />
+              <Mapping SourceColumn="Late" DataSetColumn="Late" />
+              <Mapping SourceColumn="accept" DataSetColumn="accept" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="COID" DataSetColumn="COID" />
+              <Mapping SourceColumn="outStanding" DataSetColumn="outStanding" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CoIncomeView" msprop:Generator_TableClassName="CoIncomeViewDataTable" msprop:Generator_TableVarName="tableCoIncomeView" msprop:Generator_TablePropName="CoIncomeView" msprop:Generator_RowDeletingName="CoIncomeViewRowDeleting" msprop:Generator_RowChangingName="CoIncomeViewRowChanging" msprop:Generator_RowEvHandlerName="CoIncomeViewRowChangeEventHandler" msprop:Generator_RowDeletedName="CoIncomeViewRowDeleted" msprop:Generator_UserTableName="CoIncomeView" msprop:Generator_RowChangedName="CoIncomeViewRowChanged" msprop:Generator_RowEvArgName="CoIncomeViewRowChangeEvent" msprop:Generator_RowClassName="CoIncomeViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BID" msprop:Generator_ColumnVarNameInTable="columnBID" msprop:Generator_ColumnPropNameInRow="BID" msprop:Generator_ColumnPropNameInTable="BIDColumn" msprop:Generator_UserColumnName="BID" type="xs:long" />
+              <xs:element name="CID" msprop:Generator_ColumnVarNameInTable="columnCID" msprop:Generator_ColumnPropNameInRow="CID" msprop:Generator_ColumnPropNameInTable="CIDColumn" msprop:Generator_UserColumnName="CID" type="xs:long" />
+              <xs:element name="CName" msprop:Generator_ColumnVarNameInTable="columnCName" msprop:Generator_ColumnPropNameInRow="CName" msprop:Generator_ColumnPropNameInTable="CNameColumn" msprop:Generator_UserColumnName="CName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COID" msprop:Generator_ColumnVarNameInTable="columnCOID" msprop:Generator_ColumnPropNameInRow="COID" msprop:Generator_ColumnPropNameInTable="COIDColumn" msprop:Generator_UserColumnName="COID" type="xs:long" />
+              <xs:element name="Pay_Date" msprop:Generator_ColumnVarNameInTable="columnPay_Date" msprop:Generator_ColumnPropNameInRow="Pay_Date" msprop:Generator_ColumnPropNameInTable="Pay_DateColumn" msprop:Generator_UserColumnName="Pay_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Pay__Amount" msprop:Generator_ColumnVarNameInTable="columnPay__Amount" msprop:Generator_ColumnPropNameInRow="Pay__Amount" msprop:Generator_ColumnPropNameInTable="Pay__AmountColumn" msprop:Generator_UserColumnName="Pay__Amount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CONewCus_VS" msprop:Generator_TableClassName="CONewCus_VSDataTable" msprop:Generator_TableVarName="tableCONewCus_VS" msprop:Generator_RowChangedName="CONewCus_VSRowChanged" msprop:Generator_TablePropName="CONewCus_VS" msprop:Generator_RowDeletingName="CONewCus_VSRowDeleting" msprop:Generator_RowChangingName="CONewCus_VSRowChanging" msprop:Generator_RowEvHandlerName="CONewCus_VSRowChangeEventHandler" msprop:Generator_RowDeletedName="CONewCus_VSRowDeleted" msprop:Generator_RowClassName="CONewCus_VSRow" msprop:Generator_UserTableName="CONewCus_VS" msprop:Generator_RowEvArgName="CONewCus_VSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COID" msprop:Generator_ColumnVarNameInTable="columnCOID" msprop:Generator_ColumnPropNameInRow="COID" msprop:Generator_ColumnPropNameInTable="COIDColumn" msprop:Generator_UserColumnName="COID" type="xs:long" />
+              <xs:element name="COName" msprop:Generator_ColumnVarNameInTable="columnCOName" msprop:Generator_ColumnPropNameInRow="COName" msprop:Generator_ColumnPropNameInTable="CONameColumn" msprop:Generator_UserColumnName="COName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" minOccurs="0" />
+              <xs:element name="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" msprop:Generator_UserColumnName="StartDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PayScheduleView" msprop:Generator_TableClassName="PayScheduleViewDataTable" msprop:Generator_TableVarName="tablePayScheduleView" msprop:Generator_TablePropName="PayScheduleView" msprop:Generator_RowDeletingName="PayScheduleViewRowDeleting" msprop:Generator_RowChangingName="PayScheduleViewRowChanging" msprop:Generator_RowEvHandlerName="PayScheduleViewRowChangeEventHandler" msprop:Generator_RowDeletedName="PayScheduleViewRowDeleted" msprop:Generator_UserTableName="PayScheduleView" msprop:Generator_RowChangedName="PayScheduleViewRowChanged" msprop:Generator_RowEvArgName="PayScheduleViewRowChangeEvent" msprop:Generator_RowClassName="PayScheduleViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BID" msprop:Generator_ColumnVarNameInTable="columnBID" msprop:Generator_ColumnPropNameInRow="BID" msprop:Generator_ColumnPropNameInTable="BIDColumn" msprop:Generator_UserColumnName="BID" type="xs:long" minOccurs="0" />
+              <xs:element name="CusID" msprop:Generator_ColumnVarNameInTable="columnCusID" msprop:Generator_ColumnPropNameInRow="CusID" msprop:Generator_ColumnPropNameInTable="CusIDColumn" msprop:Generator_UserColumnName="CusID" type="xs:long" minOccurs="0" />
+              <xs:element name="Total_pay" msprop:Generator_ColumnVarNameInTable="columnTotal_pay" msprop:Generator_ColumnPropNameInRow="Total_pay" msprop:Generator_ColumnPropNameInTable="Total_payColumn" msprop:Generator_UserColumnName="Total_pay" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Schedule" msprop:Generator_ColumnVarNameInTable="columnSchedule" msprop:Generator_ColumnPropNameInRow="Schedule" msprop:Generator_ColumnPropNameInTable="ScheduleColumn" msprop:Generator_UserColumnName="Schedule" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="day" msprop:Generator_ColumnVarNameInTable="columnday" msprop:Generator_ColumnPropNameInRow="day" msprop:Generator_ColumnPropNameInTable="dayColumn" msprop:Generator_UserColumnName="day" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CName" msprop:Generator_ColumnVarNameInTable="columnCName" msprop:Generator_ColumnPropNameInRow="CName" msprop:Generator_ColumnPropNameInTable="CNameColumn" msprop:Generator_UserColumnName="CName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COName" msprop:Generator_ColumnVarNameInTable="columnCOName" msprop:Generator_ColumnPropNameInRow="COName" msprop:Generator_ColumnPropNameInTable="CONameColumn" msprop:Generator_UserColumnName="COName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="B_Amount" msprop:Generator_ColumnVarNameInTable="columnB_Amount" msprop:Generator_ColumnPropNameInRow="B_Amount" msprop:Generator_ColumnPropNameInTable="B_AmountColumn" msprop:Generator_UserColumnName="B_Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" type="xs:int" minOccurs="0" />
+              <xs:element name="B_Date" msprop:Generator_ColumnVarNameInTable="columnB_Date" msprop:Generator_ColumnPropNameInRow="B_Date" msprop:Generator_ColumnPropNameInTable="B_DateColumn" msprop:Generator_UserColumnName="B_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" msprop:Generator_UserColumnName="EndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Expr2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaidDay" msprop:Generator_ColumnVarNameInTable="columnPaidDay" msprop:Generator_ColumnPropNameInRow="PaidDay" msprop:Generator_ColumnPropNameInTable="PaidDayColumn" msprop:Generator_UserColumnName="PaidDay" type="xs:int" minOccurs="0" />
+              <xs:element name="R_Day" msprop:Generator_ColumnVarNameInTable="columnR_Day" msprop:Generator_ColumnPropNameInRow="R_Day" msprop:Generator_ColumnPropNameInTable="R_DayColumn" msprop:Generator_UserColumnName="R_Day" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CusPaymentRecord_VS" msprop:Generator_TableClassName="CusPaymentRecord_VSDataTable" msprop:Generator_TableVarName="tableCusPaymentRecord_VS" msprop:Generator_RowChangedName="CusPaymentRecord_VSRowChanged" msprop:Generator_TablePropName="CusPaymentRecord_VS" msprop:Generator_RowDeletingName="CusPaymentRecord_VSRowDeleting" msprop:Generator_RowChangingName="CusPaymentRecord_VSRowChanging" msprop:Generator_RowEvHandlerName="CusPaymentRecord_VSRowChangeEventHandler" msprop:Generator_RowDeletedName="CusPaymentRecord_VSRowDeleted" msprop:Generator_RowClassName="CusPaymentRecord_VSRow" msprop:Generator_UserTableName="CusPaymentRecord_VS" msprop:Generator_RowEvArgName="CusPaymentRecord_VSRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BID" msprop:Generator_ColumnVarNameInTable="columnBID" msprop:Generator_ColumnPropNameInRow="BID" msprop:Generator_ColumnPropNameInTable="BIDColumn" msprop:Generator_UserColumnName="BID" type="xs:long" minOccurs="0" />
+              <xs:element name="CusID" msprop:Generator_ColumnVarNameInTable="columnCusID" msprop:Generator_ColumnPropNameInRow="CusID" msprop:Generator_ColumnPropNameInTable="CusIDColumn" msprop:Generator_UserColumnName="CusID" type="xs:long" minOccurs="0" />
+              <xs:element name="CName" msprop:Generator_ColumnVarNameInTable="columnCName" msprop:Generator_ColumnPropNameInRow="CName" msprop:Generator_ColumnPropNameInTable="CNameColumn" msprop:Generator_UserColumnName="CName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total_Pay" msprop:Generator_ColumnVarNameInTable="columnTotal_Pay" msprop:Generator_ColumnPropNameInRow="Total_Pay" msprop:Generator_ColumnPropNameInTable="Total_PayColumn" msprop:Generator_UserColumnName="Total_Pay" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Pay__Amount" msprop:Generator_ColumnVarNameInTable="columnPay__Amount" msprop:Generator_ColumnPropNameInRow="Pay__Amount" msprop:Generator_ColumnPropNameInTable="Pay__AmountColumn" msprop:Generator_UserColumnName="Pay__Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Pay_Date" msprop:Generator_ColumnVarNameInTable="columnPay_Date" msprop:Generator_ColumnPropNameInRow="Pay_Date" msprop:Generator_ColumnPropNameInTable="Pay_DateColumn" msprop:Generator_UserColumnName="Pay_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="less" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnless" msprop:Generator_ColumnPropNameInRow="less" msprop:Generator_ColumnPropNameInTable="lessColumn" msprop:Generator_UserColumnName="less" type="xs:decimal" minOccurs="0" />
+              <xs:element name="extra" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnextra" msprop:Generator_ColumnPropNameInRow="extra" msprop:Generator_ColumnPropNameInTable="extraColumn" msprop:Generator_UserColumnName="extra" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="NewCus_VS" msprop:Generator_TableClassName="NewCus_VSDataTable" msprop:Generator_TableVarName="tableNewCus_VS" msprop:Generator_TablePropName="NewCus_VS" msprop:Generator_RowDeletingName="NewCus_VSRowDeleting" msprop:Generator_RowChangingName="NewCus_VSRowChanging" msprop:Generator_RowEvHandlerName="NewCus_VSRowChangeEventHandler" msprop:Generator_RowDeletedName="NewCus_VSRowDeleted" msprop:Generator_UserTableName="NewCus_VS" msprop:Generator_RowChangedName="NewCus_VSRowChanged" msprop:Generator_RowEvArgName="NewCus_VSRowChangeEvent" msprop:Generator_RowClassName="NewCus_VSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BID" msprop:Generator_ColumnVarNameInTable="columnBID" msprop:Generator_ColumnPropNameInRow="BID" msprop:Generator_ColumnPropNameInTable="BIDColumn" msprop:Generator_UserColumnName="BID" type="xs:long" />
+              <xs:element name="CusID" msprop:Generator_ColumnVarNameInTable="columnCusID" msprop:Generator_ColumnPropNameInRow="CusID" msprop:Generator_ColumnPropNameInTable="CusIDColumn" msprop:Generator_UserColumnName="CusID" type="xs:long" minOccurs="0" />
+              <xs:element name="CName" msprop:Generator_ColumnVarNameInTable="columnCName" msprop:Generator_ColumnPropNameInRow="CName" msprop:Generator_ColumnPropNameInTable="CNameColumn" msprop:Generator_UserColumnName="CName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="B_Amount" msprop:Generator_ColumnVarNameInTable="columnB_Amount" msprop:Generator_ColumnPropNameInRow="B_Amount" msprop:Generator_ColumnPropNameInTable="B_AmountColumn" msprop:Generator_UserColumnName="B_Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" type="xs:int" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaidDay" msprop:Generator_ColumnVarNameInTable="columnPaidDay" msprop:Generator_ColumnPropNameInRow="PaidDay" msprop:Generator_ColumnPropNameInTable="PaidDayColumn" msprop:Generator_UserColumnName="PaidDay" type="xs:int" minOccurs="0" />
+              <xs:element name="R_Day" msprop:Generator_ColumnVarNameInTable="columnR_Day" msprop:Generator_ColumnPropNameInRow="R_Day" msprop:Generator_ColumnPropNameInTable="R_DayColumn" msprop:Generator_UserColumnName="R_Day" type="xs:int" minOccurs="0" />
+              <xs:element name="B_Date" msprop:Generator_ColumnVarNameInTable="columnB_Date" msprop:Generator_ColumnPropNameInRow="B_Date" msprop:Generator_ColumnPropNameInTable="B_DateColumn" msprop:Generator_UserColumnName="B_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Total_Pay" msprop:Generator_ColumnVarNameInTable="columnTotal_Pay" msprop:Generator_ColumnPropNameInRow="Total_Pay" msprop:Generator_ColumnPropNameInTable="Total_PayColumn" msprop:Generator_UserColumnName="Total_Pay" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COName" msprop:Generator_ColumnVarNameInTable="columnCOName" msprop:Generator_ColumnPropNameInRow="COName" msprop:Generator_ColumnPropNameInTable="CONameColumn" msprop:Generator_UserColumnName="COName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_1" msprop:Generator_TableClassName="View_1DataTable" msprop:Generator_TableVarName="tableView_1" msprop:Generator_RowChangedName="View_1RowChanged" msprop:Generator_TablePropName="View_1" msprop:Generator_RowDeletingName="View_1RowDeleting" msprop:Generator_RowChangingName="View_1RowChanging" msprop:Generator_RowEvHandlerName="View_1RowChangeEventHandler" msprop:Generator_RowDeletedName="View_1RowDeleted" msprop:Generator_RowClassName="View_1Row" msprop:Generator_UserTableName="View_1" msprop:Generator_RowEvArgName="View_1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="number" msprop:Generator_ColumnVarNameInTable="columnnumber" msprop:Generator_ColumnPropNameInRow="number" msprop:Generator_ColumnPropNameInTable="numberColumn" msprop:Generator_UserColumnName="number" type="xs:long" minOccurs="0" />
+              <xs:element name="CName" msprop:Generator_ColumnVarNameInTable="columnCName" msprop:Generator_ColumnPropNameInRow="CName" msprop:Generator_ColumnPropNameInTable="CNameColumn" msprop:Generator_UserColumnName="CName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sex" msprop:Generator_ColumnVarNameInTable="columnSex" msprop:Generator_ColumnPropNameInRow="Sex" msprop:Generator_ColumnPropNameInTable="SexColumn" msprop:Generator_UserColumnName="Sex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="B_Amount" msprop:Generator_ColumnVarNameInTable="columnB_Amount" msprop:Generator_ColumnPropNameInRow="B_Amount" msprop:Generator_ColumnPropNameInTable="B_AmountColumn" msprop:Generator_UserColumnName="B_Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Interest" msprop:Generator_ColumnVarNameInTable="columnInterest" msprop:Generator_ColumnPropNameInRow="Interest" msprop:Generator_ColumnPropNameInTable="InterestColumn" msprop:Generator_UserColumnName="Interest" type="xs:double" minOccurs="0" />
+              <xs:element name="I_Amount" msprop:Generator_ColumnVarNameInTable="columnI_Amount" msprop:Generator_ColumnPropNameInRow="I_Amount" msprop:Generator_ColumnPropNameInTable="I_AmountColumn" msprop:Generator_UserColumnName="I_Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Period" msprop:Generator_ColumnVarNameInTable="columnPeriod" msprop:Generator_ColumnPropNameInRow="Period" msprop:Generator_ColumnPropNameInTable="PeriodColumn" msprop:Generator_UserColumnName="Period" type="xs:int" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" msprop:Generator_UserColumnName="StartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" msprop:Generator_UserColumnName="EndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="R_Amount" msprop:Generator_ColumnVarNameInTable="columnR_Amount" msprop:Generator_ColumnPropNameInRow="R_Amount" msprop:Generator_ColumnPropNameInTable="R_AmountColumn" msprop:Generator_UserColumnName="R_Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Female" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFemale" msprop:Generator_ColumnPropNameInRow="Female" msprop:Generator_ColumnPropNameInTable="FemaleColumn" msprop:Generator_UserColumnName="Female" type="xs:int" minOccurs="0" />
+              <xs:element name="Male" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMale" msprop:Generator_ColumnPropNameInRow="Male" msprop:Generator_ColumnPropNameInTable="MaleColumn" msprop:Generator_UserColumnName="Male" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EveryDayView21" msprop:Generator_TableClassName="EveryDayView21DataTable" msprop:Generator_TableVarName="tableEveryDayView21" msprop:Generator_RowChangedName="EveryDayView21RowChanged" msprop:Generator_TablePropName="EveryDayView21" msprop:Generator_RowDeletingName="EveryDayView21RowDeleting" msprop:Generator_RowChangingName="EveryDayView21RowChanging" msprop:Generator_RowEvHandlerName="EveryDayView21RowChangeEventHandler" msprop:Generator_RowDeletedName="EveryDayView21RowDeleted" msprop:Generator_RowClassName="EveryDayView21Row" msprop:Generator_UserTableName="EveryDayView21" msprop:Generator_RowEvArgName="EveryDayView21RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BID" msprop:Generator_ColumnVarNameInTable="columnBID" msprop:Generator_ColumnPropNameInRow="BID" msprop:Generator_ColumnPropNameInTable="BIDColumn" msprop:Generator_UserColumnName="BID" type="xs:long" />
+              <xs:element name="CusID" msprop:Generator_ColumnVarNameInTable="columnCusID" msprop:Generator_ColumnPropNameInRow="CusID" msprop:Generator_ColumnPropNameInTable="CusIDColumn" msprop:Generator_UserColumnName="CusID" type="xs:long" minOccurs="0" />
+              <xs:element name="CName" msprop:Generator_ColumnVarNameInTable="columnCName" msprop:Generator_ColumnPropNameInRow="CName" msprop:Generator_ColumnPropNameInTable="CNameColumn" msprop:Generator_UserColumnName="CName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="B_Amount" msprop:Generator_ColumnVarNameInTable="columnB_Amount" msprop:Generator_ColumnPropNameInRow="B_Amount" msprop:Generator_ColumnPropNameInTable="B_AmountColumn" msprop:Generator_UserColumnName="B_Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="B_Date" msprop:Generator_ColumnVarNameInTable="columnB_Date" msprop:Generator_ColumnPropNameInRow="B_Date" msprop:Generator_ColumnPropNameInTable="B_DateColumn" msprop:Generator_UserColumnName="B_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="COName" msprop:Generator_ColumnVarNameInTable="columnCOName" msprop:Generator_ColumnPropNameInRow="COName" msprop:Generator_ColumnPropNameInTable="CONameColumn" msprop:Generator_UserColumnName="COName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Schedule" msprop:Generator_ColumnVarNameInTable="columnSchedule" msprop:Generator_ColumnPropNameInRow="Schedule" msprop:Generator_ColumnPropNameInTable="ScheduleColumn" msprop:Generator_UserColumnName="Schedule" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Total_Pay" msprop:Generator_ColumnVarNameInTable="columnTotal_Pay" msprop:Generator_ColumnPropNameInRow="Total_Pay" msprop:Generator_ColumnPropNameInTable="Total_PayColumn" msprop:Generator_UserColumnName="Total_Pay" type="xs:decimal" minOccurs="0" />
+              <xs:element name="New_Type" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNew_Type" msprop:Generator_ColumnPropNameInRow="New_Type" msprop:Generator_ColumnPropNameInTable="New_TypeColumn" msprop:Generator_UserColumnName="New_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaidDay" msprop:Generator_ColumnVarNameInTable="columnPaidDay" msprop:Generator_ColumnPropNameInRow="PaidDay" msprop:Generator_ColumnPropNameInTable="PaidDayColumn" msprop:Generator_UserColumnName="PaidDay" type="xs:int" minOccurs="0" />
+              <xs:element name="R_Day" msprop:Generator_ColumnVarNameInTable="columnR_Day" msprop:Generator_ColumnPropNameInRow="R_Day" msprop:Generator_ColumnPropNameInTable="R_DayColumn" msprop:Generator_UserColumnName="R_Day" type="xs:int" minOccurs="0" />
+              <xs:element name="Late" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLate" msprop:Generator_ColumnPropNameInRow="Late" msprop:Generator_ColumnPropNameInTable="LateColumn" msprop:Generator_UserColumnName="Late" type="xs:int" minOccurs="0" />
+              <xs:element name="accept" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnaccept" msprop:Generator_ColumnPropNameInRow="accept" msprop:Generator_ColumnPropNameInTable="acceptColumn" msprop:Generator_UserColumnName="accept" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COID" msprop:Generator_ColumnVarNameInTable="columnCOID" msprop:Generator_ColumnPropNameInRow="COID" msprop:Generator_ColumnPropNameInTable="COIDColumn" msprop:Generator_UserColumnName="COID" type="xs:long" />
+              <xs:element name="outStanding" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnoutStanding" msprop:Generator_ColumnPropNameInRow="outStanding" msprop:Generator_ColumnPropNameInTable="outStandingColumn" msprop:Generator_UserColumnName="outStanding" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CO_NEW_DET" msprop:Generator_TableClassName="CO_NEW_DETDataTable" msprop:Generator_TableVarName="tableCO_NEW_DET" msprop:Generator_TablePropName="CO_NEW_DET" msprop:Generator_RowDeletingName="CO_NEW_DETRowDeleting" msprop:Generator_RowChangingName="CO_NEW_DETRowChanging" msprop:Generator_RowEvHandlerName="CO_NEW_DETRowChangeEventHandler" msprop:Generator_RowDeletedName="CO_NEW_DETRowDeleted" msprop:Generator_UserTableName="CO_NEW_DET" msprop:Generator_RowChangedName="CO_NEW_DETRowChanged" msprop:Generator_RowEvArgName="CO_NEW_DETRowChangeEvent" msprop:Generator_RowClassName="CO_NEW_DETRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COID" msprop:Generator_ColumnVarNameInTable="columnCOID" msprop:Generator_ColumnPropNameInRow="COID" msprop:Generator_ColumnPropNameInTable="COIDColumn" msprop:Generator_UserColumnName="COID" type="xs:int" minOccurs="0" />
+              <xs:element name="CONAME" msprop:Generator_ColumnVarNameInTable="columnCONAME" msprop:Generator_ColumnPropNameInRow="CONAME" msprop:Generator_ColumnPropNameInTable="CONAMEColumn" msprop:Generator_UserColumnName="CONAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BID" msprop:Generator_ColumnVarNameInTable="columnBID" msprop:Generator_ColumnPropNameInRow="BID" msprop:Generator_ColumnPropNameInTable="BIDColumn" msprop:Generator_UserColumnName="BID" type="xs:int" minOccurs="0" />
+              <xs:element name="CUSID" msprop:Generator_ColumnVarNameInTable="columnCUSID" msprop:Generator_ColumnPropNameInRow="CUSID" msprop:Generator_ColumnPropNameInTable="CUSIDColumn" msprop:Generator_UserColumnName="CUSID" type="xs:int" minOccurs="0" />
+              <xs:element name="CUSNAME" msprop:Generator_ColumnVarNameInTable="columnCUSNAME" msprop:Generator_ColumnPropNameInRow="CUSNAME" msprop:Generator_ColumnPropNameInTable="CUSNAMEColumn" msprop:Generator_UserColumnName="CUSNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CUSTEL" msprop:Generator_ColumnVarNameInTable="columnCUSTEL" msprop:Generator_ColumnPropNameInRow="CUSTEL" msprop:Generator_ColumnPropNameInTable="CUSTELColumn" msprop:Generator_UserColumnName="CUSTEL" type="xs:string" minOccurs="0" />
+              <xs:element name="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" msprop:Generator_UserColumnName="AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TYPE" msprop:Generator_ColumnVarNameInTable="columnTYPE" msprop:Generator_ColumnPropNameInRow="TYPE" msprop:Generator_ColumnPropNameInTable="TYPEColumn" msprop:Generator_UserColumnName="TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RPT" msprop:Generator_TableClassName="RPTDataTable" msprop:Generator_TableVarName="tableRPT" msprop:Generator_TablePropName="RPT" msprop:Generator_RowDeletingName="RPTRowDeleting" msprop:Generator_RowChangingName="RPTRowChanging" msprop:Generator_RowEvHandlerName="RPTRowChangeEventHandler" msprop:Generator_RowDeletedName="RPTRowDeleted" msprop:Generator_UserTableName="RPT" msprop:Generator_RowChangedName="RPTRowChanged" msprop:Generator_RowEvArgName="RPTRowChangeEvent" msprop:Generator_RowClassName="RPTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="int_id" msprop:Generator_ColumnVarNameInTable="columnint_id" msprop:Generator_ColumnPropNameInRow="int_id" msprop:Generator_ColumnPropNameInTable="int_idColumn" msprop:Generator_UserColumnName="int_id" type="xs:string" minOccurs="0" />
+              <xs:element name="int_cusid" msprop:Generator_ColumnVarNameInTable="columnint_cusid" msprop:Generator_ColumnPropNameInRow="int_cusid" msprop:Generator_ColumnPropNameInTable="int_cusidColumn" msprop:Generator_UserColumnName="int_cusid" type="xs:string" minOccurs="0" />
+              <xs:element name="var_cusname" msprop:Generator_ColumnVarNameInTable="columnvar_cusname" msprop:Generator_ColumnPropNameInRow="var_cusname" msprop:Generator_ColumnPropNameInTable="var_cusnameColumn" msprop:Generator_UserColumnName="var_cusname" type="xs:string" minOccurs="0" />
+              <xs:element name="int_coid" msprop:Generator_ColumnVarNameInTable="columnint_coid" msprop:Generator_ColumnPropNameInRow="int_coid" msprop:Generator_ColumnPropNameInTable="int_coidColumn" msprop:Generator_UserColumnName="int_coid" type="xs:string" minOccurs="0" />
+              <xs:element name="var_coname" msprop:Generator_ColumnVarNameInTable="columnvar_coname" msprop:Generator_ColumnPropNameInRow="var_coname" msprop:Generator_ColumnPropNameInTable="var_conameColumn" msprop:Generator_UserColumnName="var_coname" type="xs:string" minOccurs="0" />
+              <xs:element name="dat_date" msprop:Generator_ColumnVarNameInTable="columndat_date" msprop:Generator_ColumnPropNameInRow="dat_date" msprop:Generator_ColumnPropNameInTable="dat_dateColumn" msprop:Generator_UserColumnName="dat_date" type="xs:string" minOccurs="0" />
+              <xs:element name="var_type" msprop:Generator_ColumnVarNameInTable="columnvar_type" msprop:Generator_ColumnPropNameInRow="var_type" msprop:Generator_ColumnPropNameInTable="var_typeColumn" msprop:Generator_UserColumnName="var_type" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_total" msprop:Generator_ColumnVarNameInTable="columndou_total" msprop:Generator_ColumnPropNameInRow="dou_total" msprop:Generator_ColumnPropNameInTable="dou_totalColumn" msprop:Generator_UserColumnName="dou_total" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_prin" msprop:Generator_ColumnVarNameInTable="columndou_prin" msprop:Generator_ColumnPropNameInRow="dou_prin" msprop:Generator_ColumnPropNameInTable="dou_prinColumn" msprop:Generator_UserColumnName="dou_prin" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_int" msprop:Generator_ColumnVarNameInTable="columndou_int" msprop:Generator_ColumnPropNameInRow="dou_int" msprop:Generator_ColumnPropNameInTable="dou_intColumn" msprop:Generator_UserColumnName="dou_int" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_total_paid" msprop:Generator_ColumnVarNameInTable="columndou_total_paid" msprop:Generator_ColumnPropNameInRow="dou_total_paid" msprop:Generator_ColumnPropNameInTable="dou_total_paidColumn" msprop:Generator_UserColumnName="dou_total_paid" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_prin_paid" msprop:Generator_ColumnVarNameInTable="columndou_prin_paid" msprop:Generator_ColumnPropNameInRow="dou_prin_paid" msprop:Generator_ColumnPropNameInTable="dou_prin_paidColumn" msprop:Generator_UserColumnName="dou_prin_paid" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_int_paid" msprop:Generator_ColumnVarNameInTable="columndou_int_paid" msprop:Generator_ColumnPropNameInRow="dou_int_paid" msprop:Generator_ColumnPropNameInTable="dou_int_paidColumn" msprop:Generator_UserColumnName="dou_int_paid" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_total_bal" msprop:Generator_ColumnVarNameInTable="columndou_total_bal" msprop:Generator_ColumnPropNameInRow="dou_total_bal" msprop:Generator_ColumnPropNameInTable="dou_total_balColumn" msprop:Generator_UserColumnName="dou_total_bal" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_prin_bal" msprop:Generator_ColumnVarNameInTable="columndou_prin_bal" msprop:Generator_ColumnPropNameInRow="dou_prin_bal" msprop:Generator_ColumnPropNameInTable="dou_prin_balColumn" msprop:Generator_UserColumnName="dou_prin_bal" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_int_bal" msprop:Generator_ColumnVarNameInTable="columndou_int_bal" msprop:Generator_ColumnPropNameInRow="dou_int_bal" msprop:Generator_ColumnPropNameInTable="dou_int_balColumn" msprop:Generator_UserColumnName="dou_int_bal" type="xs:string" minOccurs="0" />
+              <xs:element name="int_cus_count" msprop:Generator_ColumnVarNameInTable="columnint_cus_count" msprop:Generator_ColumnPropNameInRow="int_cus_count" msprop:Generator_ColumnPropNameInTable="int_cus_countColumn" msprop:Generator_UserColumnName="int_cus_count" type="xs:string" minOccurs="0" />
+              <xs:element name="var_tel" msprop:Generator_ColumnVarNameInTable="columnvar_tel" msprop:Generator_ColumnPropNameInRow="var_tel" msprop:Generator_ColumnPropNameInTable="var_telColumn" msprop:Generator_UserColumnName="var_tel" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_less" msprop:Generator_ColumnVarNameInTable="columndou_less" msprop:Generator_ColumnPropNameInRow="dou_less" msprop:Generator_ColumnPropNameInTable="dou_lessColumn" msprop:Generator_UserColumnName="dou_less" type="xs:string" minOccurs="0" />
+              <xs:element name="dou_extra" msprop:Generator_ColumnVarNameInTable="columndou_extra" msprop:Generator_ColumnPropNameInRow="dou_extra" msprop:Generator_ColumnPropNameInTable="dou_extraColumn" msprop:Generator_UserColumnName="dou_extra" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
